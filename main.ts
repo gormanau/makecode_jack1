@@ -34,7 +34,8 @@ let Player1 = sprites.create(img`
     . . . . . 8 8 . . . 8 8 . . . . 
     . . . . 8 8 8 . . . 8 8 8 . . . 
     `, SpriteKind.Player)
-Player1.setFlag(SpriteFlag.StayInScreen, false)
+Player1.setFlag(SpriteFlag.StayInScreen, true)
+Player1.setFlag(SpriteFlag.BounceOnWall, true)
 Player1.setPosition(8, 8)
 controller.moveSprite(Player1)
 scene.cameraFollowSprite(Player1)
